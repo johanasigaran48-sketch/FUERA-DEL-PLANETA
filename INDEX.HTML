@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mundos de UNIVER</title>
+  <style>
+    /* ======== ESTILO GENERAL ======== */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Trebuchet MS', sans-serif;
+      color: #fff;
+      background: linear-gradient(135deg, rgba(10,10,30,0.85), rgba(0,0,0,0.9)),
+                  url("FUERA DEL MUNDO.jpeg") no-repeat center center fixed;
+      background-size: cover;
+      scroll-behavior: smooth;
+    }
+
+    /* ======== MENÚ DE NAVEGACIÓN ======== */
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.7);
+      padding: 10px 0;
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      z-index: 10;
+      backdrop-filter: blur(6px);
+      box-shadow: 0 0 20px rgba(0,255,255,0.4);
+    }
+
+    nav a {
+      color: #00ffff;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1em;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ff00ff;
+    }
+
+    /* ======== SECCIÓN INICIO ======== */
+    header {
+      height: 100vh;
+      background: linear-gradient(180deg, rgba(0,0,0,0.4), rgba(0,0,0,0.7)),
+                  url("UNIVER.jpeg") no-repeat center center;
+      background-size: cover;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-shadow: 3px 3px 10px #000;
+    }
+
+    header h1 {
+      font-size: 4em;
+      color: #00eaff;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      animation: brillo 3s infinite alternate;
+    }
+
+    header p {
+      font-size: 1.5em;
+      color: #ff00ff;
+      font-weight: bold;
+    }
+
+    /* ======== SECCIONES GENERALES ======== */
+    section {
+      padding: 100px 20px;
+      text-align: center;
+      background: rgba(0, 0, 0, 0.7);
+      margin-top: 60px;
+      box-shadow: 0 0 30px rgba(0, 255, 255, 0.2);
+    }
+
+    section h2 {
+      color: #00ff88;
+      font-size: 2.5em;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px 8px black;
+    }
+
+    section p {
+      color: #e0e0e0;
+      max-width: 800px;
+      margin: 0 auto;
+      font-size: 1.2em;
+      line-height: 1.6;
+    }
+
+    /* ======== GALERÍA DE IMÁGENES ======== */
+    .galeria {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-top: 40px;
+    }
+
+    .galeria img {
+      width: 280px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,255,255,0.5);
+      transition: transform 0.4s, box-shadow 0.4s;
+    }
+
+    .galeria img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 25px rgba(255,0,255,0.7);
+    }
+
+    /* ======== VIDEOS ======== */
+    video {
+      width: 80%;
+      max-width: 700px;
+      border: 3px solid #00ffff;
+      border-radius: 10px;
+      box-shadow: 0 0 25px rgba(255, 0, 255, 0.5);
+      margin-top: 20px;
+    }
+
+    /* ======== ANIMACIONES ======== */
+    @keyframes brillo {
+      from { text-shadow: 0 0 10px #00ffff, 0 0 20px #00eaff; }
+      to { text-shadow: 0 0 25px #ff00ff, 0 0 40px #00ffcc; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- MENÚ -->
+  <nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#imagenes">Imágenes</a>
+    <a href="#videos">Videos</a>
+    <a href="#historia">Historia</a>
+  </nav>
+
+  <!-- INICIO -->
+  <header id="inicio">
+    <h1>🌌 UNIVER 🌌</h1>
+    <p>Explora los mundos locos y fuera del mundo</p>
+  </header>
+
+  <!-- IMÁGENES -->
+  <section id="imagenes">
+    <h2>🖼️ Imágenes del Universo</h2>
+    <p>GALAXIA QUE NOSOTROS NO VEMOS.</p>
+    <div class="galeria">
+      <img src="CSS/IMG/UNIVERSO.jpeg" alt="Galaxia 1">
+      <img src="CSS/IMG/UNIVERSO2.jpeg" alt="Galaxia 2">
+      <img src="CSS/IMG/UNIVERSO3.jpeg" alt="Galaxia 3">
+    </div>
+  </section>
+
+  <!-- VIDEOS -->
+  <section id="videos">
+    <h2>🎥 Videos Espaciales</h2>
+    <p>LA GRAN MACHA ROJA DE JUPITER.</p>
+    <video controls>
+      <source src="CSS/IMG/UNI.mp4" type="video/mp4">
+      Tu navegador no soporta la reproducción de video.
+    </video>
+  </section>
+
+  <!-- HISTORIA -->
+  <section id="historia">
+    <h2>📖 Historia del UNIVER</h2>
+    <p>
+    La historia del espacio comienza con el Big Bang hace unos \(13.8\) mil millones de años, un evento que dio origen al universo, expandiendo la materia y el tiempo.
+     La exploración humana del espacio inició con cohetes de prueba en la década de 1940, como el cohete V-2 en 1944, pero la era de la exploración espacial moderna comenzó con el lanzamiento del satélite Sputnik 1 en 1957,
+      marcando el inicio de la carrera espacial. Origen del universo El Big Bang: Hace aproximadamente \(13.8\) mil millones de años,
+     el universo comenzó como un punto infinitamente denso y caliente que se expandió rápidamente.
+    </p>
+  </section>
+
+</body>
+</html>
